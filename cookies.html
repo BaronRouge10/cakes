@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>D's Delights : Cookies</title>
+    <link href="main.css" rel="stylesheet" />
+    <script src="main.js"></script>
+    <style>
+      .pagination {
+        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .pagination a {
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+      }
+      
+      .pagination a.active {
+        background-color: #4CAF50;
+        color: white;
+        border-radius: 5px;
+      }
+      
+      .pagination a:hover:not(.active) {
+        background-color: #ddd;
+        border-radius: 5px;
+      }
+
+      .carousel-img {                                                                
+        display: none;
+        width: 700px; /* Set the width */
+        height: 700px; /* Set the height */
+        object-fit: cover; /* aspect ratio of the images is maintained */                                                             
+      }                                                                              
+                                                                                     
+      .carousel-img.active {                                                         
+        display: inline-block;                                                              
+      } 
+
+      #carousel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }               
+    </style>
+  </head>
+
+  <body>
+    
+    <header>
+      <nav class="quickLinks">
+        <a class="myheader title" href="index.html">D's Delights</a>
+        <a class="myheader" href="allRecipes.html">All Recipes</a>
+        <a class="myheader" href="cupcakes.html">Cupcakes</a>
+        <a class="myheader" href="cakes.html">Cakes</a>
+        <a class="myheader" href="cookies.html">Cookies</a>
+        <a class="myheader" href="moreInfo.html">More Info</a>      
+      </nav>
+    </header>
+
+    <div id="carousel">                                                            
+      <img src="images/Cookies/Cookies1.png" class="carousel-img active">                             
+      <img src="images/Cookies/Cookies2.png" class="carousel-img">                                    
+      <img src="images/Cookies/Cookies3.png" class="carousel-img"> 
+      <img src="images/Cookies/Cookies4.png" class="carousel-img">                             
+      <img src="images/Cookies/Cookies5.png" class="carousel-img">                                    
+      <img src="images/Cookies/Cookies6.png" class="carousel-img">                                
+      <img src="images/Cookies/Cookies7.png" class="carousel-img">                                   
+    </div>                                                                         
+
+    <div class="pagination">
+      <a href="#" onclick="changeImg(0)">&laquo;</a>
+      <a href="#" onclick="changeImg(1)" class="active">1</a>
+      <a href="#" onclick="changeImg(2)">2</a>
+      <a href="#" onclick="changeImg(3)">3</a>
+      <a href="#" onclick="changeImg(4)">4</a>
+      <a href="#" onclick="changeImg(5)">5</a>
+      <a href="#" onclick="changeImg(6)">6</a>
+      <a href="#" onclick="changeImg(7)">&raquo;</a>
+    </div>                                    
+    
+    <script>
+      function changeImg(index) {
+        const images = document.getElementsByClassName('carousel-img');
+        const buttons = document.getElementsByClassName('pagination')[0].getElementsByTagName('a');
+
+        for (let i = 0; i < images.length; i++) {
+          images[i].classList.remove('active');
+        }
+        for (let i = 0; i < buttons.length; i++) {
+          buttons[i].classList.remove('active');
+        }
+
+        images[index].classList.add('active');
+        buttons[index].classList.add('active');
+      }            
+    </script>
+
+  </body>
+</html>
