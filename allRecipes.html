@@ -46,7 +46,73 @@
         display: flex;
         justify-content: center;
         align-items: center;
-      }               
+      }    
+      .quickLinks {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 10px;
+        border-radius: 15px;
+        box-shadow: 10px 10px 5px grey;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .quickLinks a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+      .quickLinks a:hover {
+        background-color: #ddd;
+      }
+      .grid-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+      }
+      .img-container {
+        flex: 1 0 21%;
+        margin: 2%;
+        border-radius: 15px;
+        box-shadow: 5px 5px 3px grey;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+      }
+      .img-container:hover {
+        transform: scale(1.05);
+      }
+      .img-container img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      .img-text {
+        padding: 10px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.8);
+      }
+      .buzzWords {
+        text-align: center;
+        margin: 20px 0;
+      }
+      .buzzWords h3 {
+        font-size: 1.5em;
+        color: #555;
+      }
+      .intro {
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 5px 5px 3px grey;
+        margin-bottom: 20px;
+      }
+      .intro h2 {
+        font-size: 1.2em;
+        color: #666;
+      }           
     </style>
   </head>
 
@@ -81,7 +147,7 @@
       <a href="#" onclick="changeImg(4)">4</a>
       <a href="#" onclick="changeImg(5)">5</a>
       <a href="#" onclick="changeImg(6)">6</a>
-      <a href="#" onclick="changeImg(7)">&raquo;</a>
+      <a href="#" onclick="changeImg(0)">&raquo;</a>
     </div>                                    
     
     <script>

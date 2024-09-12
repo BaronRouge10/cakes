@@ -5,23 +5,109 @@
     <link href="main.css" rel="stylesheet" />
     <script src="main.js"></script>
     <style>
+      body {
+        font-family: 'Arial, sans-serif';
+        line-height: 1.6;
+        color: #333;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
       .parallax {
         /* The image used */
         background-image: url("images/Cakes/FakeCake.png");
         /* Set a specific height */
-        height: 500px;
+        height: 600px;
         /* Create the parallax scrolling effect */
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        border-radius: 15px;
+        box-shadow: 10px 10px 5px grey;
+        margin-bottom: 20px;
       }
       .quickLinks {
-        background-image: url("images/Cakes/FakeCake.png");
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 10px;
+        border-radius: 15px;
+        box-shadow: 10px 10px 5px grey;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .quickLinks a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+      .quickLinks a:hover {
+        background-color: #ddd;
+      }
+      .grid-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+      }
+      .img-container {
+        flex: 1 0 21%;
+        margin: 2%;
+        border-radius: 15px;
+        box-shadow: 5px 5px 3px grey;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+      }
+      .img-container:hover {
+        transform: scale(1.05);
+      }
+      .img-container img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      .img-text {
+        padding: 10px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.8);
+      }
+      .buzzWords {
+        text-align: center;
+        margin: 20px 0;
+      }
+      .buzzWords h3 {
+        font-size: 1.5em;
+        color: #555;
+      }
+      .intro {
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 5px 5px 3px grey;
+        margin-bottom: 20px;
+      }
+      .intro h2 {
+        font-size: 1.2em;
+        color: #666;
+      }
+      .side-detail {
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 5px 5px 3px grey;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .side-detail h4 {
+        font-size: 1.1em;
+        color: #666;
+      }
+      .side-detail p {
+        font-size: 0.9em;
+        color: #333;
       }
     </style>
   </head>
@@ -41,109 +127,86 @@
       <div class="parallax"></div>
       
       <section class="intro">
-        <h2 class="textBox1">  
-          Hi there! On this page you will find all the available treats that are
+        <div class="textBox1">  
+          <h2>Hi there! On this page you will find all the available treats that are
           ranging from classic chocolate chip cookies to cakes that fit each and
           every possible occasion! Explore at your own will and allow yourselves to
-          roam the world of sweetness!
-        </h2>     
-
-
-        <div class="buzzWords"><h3>What we offer</h3></div>
-
+          roam the world of sweetness!</h2>
+        </div>     
       </section>
+
       <section class="cakes">
+        <div class="buzzWords"><h3>A taste of what we offer</h3></div>
         <div class="grid-container">
           <div class="img-container">
             <img src="images/Cakes/Cakes1.png" alt="Cake 1" class="uniform-img"/>
             <div class="img-text">
-              <p>Your text goes here</p>
+              <p>Delicious and moist cakes for every occasion.</p>
             </div>
           </div>
           <div class="img-container">
             <img src="images/Cupcakes/Cupcakes1.png" alt="Cupcake 1" class="uniform-img"/>
             <div class="img-text">
-              <p>Your text goes here</p>
+              <p>Scrumptious cupcakes with a variety of flavors.</p>
             </div>
           </div>
           <div class="img-container">
             <img src="images/Cookies/Cookies1.png" alt="Cookie 1" class="uniform-img"/>
             <div class="img-text">
-              <p>Your text goes here</p>
+              <p>Classic cookies that melt in your mouth.</p>
             </div>
           </div>
           <div class="img-container">
             <img src="images/Cakes/Cakes2.png" alt="Cake 2" class="uniform-img"/>
             <div class="img-text">
-              <p>Your text goes here</p>
+              <p>Beautifully decorated cakes for special moments.</p>
+            </div>
+          </div>
+          <div class="img-container">
+            <img src="images/Cakes/Cakes1.png" alt="Cake 1" class="uniform-img"/>
+            <div class="img-text">
+              <p>Delicious and moist cakes for every occasion.</p>
+            </div>
+          </div>
+          <div class="img-container">
+            <img src="images/Cupcakes/Cupcakes1.png" alt="Cupcake 1" class="uniform-img"/>
+            <div class="img-text">
+              <p>Scrumptious cupcakes with a variety of flavors.</p>
+            </div>
+          </div>
+          <div class="img-container">
+            <img src="images/Cookies/Cookies1.png" alt="Cookie 1" class="uniform-img"/>
+            <div class="img-text">
+              <p>Classic cookies that melt in your mouth.</p>
+            </div>
+          </div>
+          <div class="img-container">
+            <img src="images/Cakes/Cakes2.png" alt="Cake 2" class="uniform-img"/>
+            <div class="img-text">
+              <p>Beautifully decorated cakes for special moments.</p>
             </div>
           </div>
         </div>     
+        <div class="side-detail">
+          <h4>Our Specialties</h4>
+          <p>We take pride in our wide variety of cakes, each crafted with the finest ingredients and utmost care. From classic vanilla to exotic flavors, our cakes are designed to make every occasion special.</p>
+        </div>
+        <div class="side-detail">
+          <h4>Custom Orders</h4>
+          <p>Looking for something unique? We offer custom cake designs to match your vision. Whether it's a birthday, wedding, or any special event, we can create a cake that will be the centerpiece of your celebration.</p>
+        </div>
       </section>
-
-      <div class="buzzWords"><h3>The best pastries on Planet Earth!</h3></div>
-
-    </section>
-    <section class="cakes2">
-      <div class="grid-container">
-        <div class="img-container">
-          <img src="images/Cakes/Cakes1.png" alt="Cake 1" class="uniform-img"/>
-          <div class="img-text">
-            <p>Your text goes here</p>
-          </div>
-        </div>
-        <div class="img-container">
-          <img src="images/Cupcakes/Cupcakes1.png" alt="Cupcake 1" class="uniform-img"/>
-          <div class="img-text">
-            <p>Your text goes here</p>
-          </div>
-        </div>
-        <div class="img-container">
-          <img src="images/Cookies/Cookies1.png" alt="Cookie 1" class="uniform-img"/>
-          <div class="img-text">
-            <p>Your text goes here</p>
-          </div>
-        </div>
-        <div class="img-container">
-          <img src="images/Cakes/Cakes2.png" alt="Cake 2" class="uniform-img"/>
-          <div class="img-text">
-            <p>Your text goes here</p>
-          </div>
-        </div>
-      </div>     
-    </section>
-      
-      <!--  <section class="cakes">
-        <div class="grid-container">
-          <div class="img-container">
-            <img src="images/Cupcakes/Cupcakes6.png" alt="Cake 6" class="uniform-img"/>
-            <div class="img-text">
-              <p>Your text goes here</p>
-            </div>
-          </div>
-          <div class="img-container">
-            <img src="images/Cupcakes/Cupcakes8.png" alt="Cupcake 8" class="uniform-img"/>
-            <div class="img-text">
-              <p>Your text goes here</p>
-            </div>
-          </div>
-          <div class="img-container">
-            <img src="images/Cookies/Cookies3.png" alt="Cookie 3" class="uniform-img"/>
-            <div class="img-text">
-              <p>Your text goes here</p>
-            </div>
-          </div>
-          <div class="img-container">
-            <img src="images/Cakes/Cakes12.png" alt="Cake 12" class="uniform-img"/>
-            <div class="img-text">
-              <p>Your text goes here</p>
-            </div>
-          </div>
-        </div>     
-      </section> -->
 
     </main>
     <footer>
+      <div style="text-align: center; padding: 20px; background-color: #333; color: #fff;">
+        <p>&copy; 2024 D's Delights. All rights reserved.</p>
+        <p>Follow us on 
+          <a href="#" style="color: #4CAF50;">Facebook</a>, 
+          <a href="#" style="color: #4CAF50;">Instagram</a>, and 
+          <a href="#" style="color: #4CAF50;">Twitter</a>.
+        </p>
+      </div>
     </footer>
   </body>
 </html>

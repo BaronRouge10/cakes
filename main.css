@@ -68,13 +68,9 @@ p {
 }
 
 .textBox1 {
-  background-color: rgb(127, 146, 206);
   width: 100%;
 }
 
-.textBox2 {
-  border: 1px solid rgb(28, 177, 182);
-}
 
 * {
   box-sizing: border-box;

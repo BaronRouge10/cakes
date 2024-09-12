@@ -4,6 +4,86 @@
     <title>D's Delights : More Info</title>
     <link href="main.css" rel="stylesheet" />
     <script src="main.js"></script>
+
+<style>
+  .quickLinks {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 10px;
+        border-radius: 15px;
+        box-shadow: 10px 10px 5px grey;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .quickLinks a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+      .quickLinks a:hover {
+        background-color: #ddd;
+      }
+      .grid-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+      }
+      .img-container {
+        flex: 1 0 21%;
+        margin: 2%;
+        border-radius: 15px;
+        box-shadow: 5px 5px 3px grey;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+      }
+      .img-container:hover {
+        transform: scale(1.05);
+      }
+      .img-container img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      .img-text {
+        padding: 10px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.8);
+      }
+      .buzzWords {
+        text-align: center;
+        margin: 20px 0;
+      }
+      .buzzWords h3 {
+        font-size: 1.5em;
+        color: #555;
+      }
+      .intro {
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 5px 5px 3px grey;
+        margin-bottom: 20px;
+      }
+      .intro h2 {
+        font-size: 1.2em;
+        color: #666;
+      }
+      .textBox2 p {
+        border: none; /* Remove the blue border */
+      }
+      .floating-box {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+        margin: 10px 0;
+      }
+</style>
+
   </head>
 
   <body>
@@ -19,40 +99,55 @@
     </header>
 
     <section class="textBox2">
-      <p>
-        My name is Delilah Jaeger and I have been baking for as long as I can
-        remember. It started off as making chocolate chip cookies every weekend
-        for our family dinners ever since I was little. It was not until Covid
-        began in 2020, that baking turned into a hobby of mine. I was in 8th grade
-        at the time and due to all the free time that we had, I started to bake
-        for fun. I would experiment in all sorts of deserts, trying out different
-        recipes every week. I would make treats that my mom and I would then
-        deliver to loved ones to put smiles on their faces and spread joy during
-        those hard times. That’s where I found my joy in baking because it allows
-        you to make others happy. Ever since then, I have become the baker of the
-        family and I now make all the birthday deserts and holiday treats. My
-        cousin, Desmond Bougon, who happens to be the same age as me, has been
-        with me through this process and has helped me create this project. He
-        created the entire website and helped design the business. Both of us are
-        currently 17 years old, going into our senior years of High School and we
-        live in San Francisco, California. Our goal with creating this website is
-        to spread the word about my baking and to allow the happiness of sweets to
-        be shared with others!
-      </p>
+      <div class="floating-box">
+        <p>
+          My name is Delilah Jaeger and I have been baking for as long as I can
+          remember. It started off as making chocolate chip cookies every weekend
+          for our family dinners ever since I was little. It was not until Covid
+          began in 2020, that baking turned into a hobby of mine. I was in 8th grade
+          at the time and due to all the free time that we had, I started to bake
+          for fun. I would experiment in all sorts of deserts, trying out different
+          recipes every week. I would make treats that my mom and I would then
+          deliver to loved ones to put smiles on their faces and spread joy during
+          those hard times. That’s where I found my joy in baking because it allows
+          you to make others happy. Ever since then, I have become the baker of the
+          family and I now make all the birthday deserts and holiday treats. My
+          cousin, Desmond Bougon, who happens to be the same age as me, has been
+          with me through this process and has helped me create this project. He
+          created the entire website and helped design the business. Both of us are
+          currently 17 years old, going into our senior years of High School and we
+          live in San Francisco, California. Our goal with creating this website is
+          to spread the word about my baking and to allow the happiness of sweets to
+          be shared with others!
+        </p>
+      </div>
+      <div class="floating-box">
+        <p1 class="textBox2">
+          Phone number for orders: 415 123 4567
+        </p1>
+      </div>
     </section>
 
-    <!-- <div>
-        <div class= "containerAllRecipes">
-            <img class="footer-image-alt" src="images/dog.png" />
-    </div> -->
+    <section class="additionalInfo">
+      <div class="floating-box">
+        <h2>Our Mission</h2>
+        <p>
+          At D's Delights, our mission is to bring joy and happiness through our delicious baked goods. We believe that a sweet treat can brighten anyone's day, and we are dedicated to creating the best desserts for all occasions.
+        </p>
+      </div>
+      <div class="floating-box">
+        <h2>Contact Us</h2>
+        <p>
+          If you have any questions or would like to place an order, please don't hesitate to reach out to us. We are here to help and make your experience with D's Delights as delightful as possible.
+        </p>
+      </div>
+    </section>
 
     <img
       src="images/Cookies/Cookies3.png"
       class="moreInfoMain"
       style="display: block; margin-left: auto; margin-right: auto; width: 30%"
     />
+    
   </body>
 </html>
-
-<!--  -->
-
