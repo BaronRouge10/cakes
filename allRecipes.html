@@ -132,22 +132,35 @@
     <div id="carousel">                                                            
       <img src="images/Cakes/Cakes2.png" class="carousel-img active">                             
       <img src="images/Cakes/Cakes1.png" class="carousel-img">                                    
-      <img src="images/Cakes/Cakes3.png" class="carousel-img"> 
-      <img src="images/Cakes/Cakes1.png" class="carousel-img">                             
-      <img src="images/Cakes/Cakes2.png" class="carousel-img">                                    
-      <img src="images/Cakes/Cakes3.png" class="carousel-img">                                
-      <img src="images/Cakes/Cakes3.png" class="carousel-img">                                   
+      <img src="images/Cakes/Cakes3.png" class="carousel-img">                               
+      <img src="images/Cookies/Cookies1.png" class="carousel-img">                             
+      <img src="images/Cookies/Cookies2.png" class="carousel-img">                                    
+      <img src="images/Cookies/Cookies3.png" class="carousel-img">                                
+      <img src="images/Cupcakes/Cupcakes1.png" class="carousel-img">                             
+      <img src="images/Cupcakes/Cupcakes2.png" class="carousel-img">                                    
+      <img src="images/Cupcakes/Cupcakes3.png" class="carousel-img"> 
+      <img src="images/Cupcakes/Cupcakes4.png" class="carousel-img">                             
+      <img src="images/Cupcakes/Cupcakes5.png" class="carousel-img">                                    
+      <img src="images/Cupcakes/Cupcakes6.png" class="carousel-img">                                
+      <img src="images/Cupcakes/Cupcakes6.png" class="carousel-img">                                 
     </div>                                                                         
 
     <div class="pagination">
       <a href="#" onclick="changeImg(0)">&laquo;</a>
-      <a href="#" onclick="changeImg(1)" class="active">1</a>
-      <a href="#" onclick="changeImg(2)">2</a>
-      <a href="#" onclick="changeImg(3)">3</a>
-      <a href="#" onclick="changeImg(4)">4</a>
-      <a href="#" onclick="changeImg(5)">5</a>
-      <a href="#" onclick="changeImg(6)">6</a>
-      <a href="#" onclick="changeImg(0)">&raquo;</a>
+      <a href="#" onclick="changeImg(0)" class="active">1</a>
+      <a href="#" onclick="changeImg(1)">2</a>
+      <a href="#" onclick="changeImg(2)">3</a>
+      <a href="#" onclick="changeImg(3)">4</a>
+      <a href="#" onclick="changeImg(4)">5</a>
+      <a href="#" onclick="changeImg(5)">6</a>
+      <a href="#" onclick="changeImg(6)">7</a>
+      <a href="#" onclick="changeImg(7)">8</a>
+      <a href="#" onclick="changeImg(8)">9</a>
+      <a href="#" onclick="changeImg(9)">10</a>
+      <a href="#" onclick="changeImg(10)">11</a>
+      <a href="#" onclick="changeImg(11)">12</a>
+      <a href="#" onclick="changeImg(12)">13</a>
+      <a href="#" onclick="changeImg(13)">&raquo;</a>
     </div>                                    
     
     <script>
@@ -163,8 +176,15 @@
         }
 
         images[index].classList.add('active');
-        buttons[index].classList.add('active');
+        buttons[index + 1].classList.add('active'); // Adjust index for buttons
       }            
+      
+      // Automatically cycle through images every 3 seconds
+      let currentIndex = 0;
+      setInterval(() => {
+        currentIndex = (currentIndex + 1) % document.getElementsByClassName('carousel-img').length;
+        changeImg(currentIndex);
+      }, 3000);
     </script>
 
   </body>

@@ -46,7 +46,6 @@ p {
 .myheader {
   display: inline-block;
   width: 15%;
-  border: thin red solid;
   height: 100%;
   vertical-align: middle;
 }
